@@ -9,6 +9,8 @@ import 'leaflet-markercluster/MarkerCluster.css';
 import '@geoman-io/leaflet-geoman-free';  
 import '@geoman-io/leaflet-geoman-free/dist/leaflet-geoman.css';  
 
+import 'leaflet-styleeditor/dist/javascript/Leaflet.StyleEditor'
+import 'leaflet-styleeditor/dist/css/Leaflet.StyleEditor.css'
 
 (() => {
 
@@ -51,6 +53,10 @@ import '@geoman-io/leaflet-geoman-free/dist/leaflet-geoman.css';
             customControls: true,
             oneBlock: false,  
           });
+
+        // Style editor
+        map.addControl(L.control.styleEditor())
+        console.log('')
 
         map.on(L.Draw.Event.CREATED, function (event) {
             var layer = event.layer;
