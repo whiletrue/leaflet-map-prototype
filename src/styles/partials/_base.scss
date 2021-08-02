@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  font-weight: $font-weight-base;
+  line-height: $line-height-base;
+  color: $text-color;
+  background-color: $body-bg;
+
+  
+}
+
+#root {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;  
+}
+
+#mapid { height: 800px; }
+  
