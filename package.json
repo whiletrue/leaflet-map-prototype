@@ -7,7 +7,7 @@
   "author": "",
   "license": "ISC",
   "scripts": {
-    "build": "./node_modules/.bin/webpack --mode production",
+    "build": "./node_modules/.bin/webpack --preserve-symlinks--mode production",
     "start": "./node_modules/.bin/webpack-cli serve --config ./webpack.config.js --mode development",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -33,11 +33,13 @@
     "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
+    "@foto-andreas/leaflet-control-textinput": "^1.0.0",
     "@geoman-io/leaflet-geoman-free": "^2.11.2",
     "leaflet": "^1.7.1",
     "leaflet-draw": "^1.0.4",
+    "leaflet-easybutton": "^2.4.0",
     "leaflet-markercluster": "^0.2.2",
-    "leaflet-styleeditor": "^0.1.21",
+    "leaflet-text-editable": "^0.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   }

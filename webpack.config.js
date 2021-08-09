@@ -1,3 +1,4 @@
+const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
@@ -70,7 +71,11 @@ module.exports = {
     ]
   },
   resolve: {
-    extensions: ['*', '.js', '.jsx', '.scss']
+    extensions: ['*', '.js', '.jsx', '.scss'],
+    alias: {
+      leaflet: path.resolve('./node_modules/leaflet'),
+      'leaflet-text': path.resolve('./node_modules/leaflet-text')
+    }
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
